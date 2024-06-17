@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h4:hover {
+    color: white;
+    
+    svg {
+      fill: rgb(255, 255, 255);
+    }
+  }
+
+ #menu_song::-webkit-scrollbar {
+  display: none;
+}
+
+#wave_1{
+  animation: unset;
+}
+#wave_2{
+  animation: unset;
+}
+#wave_3{
+  animation: unset;
+}
+
+@keyframes wave{
+  0% {
+    height: 13px;
+  }
+  50% {
+    height: 8px;
+    
+  }
+  100% {
+    height: 10px;
+    
+  }
+}
+@keyframes wave{
+  0% {
+    height: 13px;
+  }
+  50% {
+    height: 8px;
+    
+  }
+  100% {
+    height: 10px;
+    
+  }
+}
+
+#song_side::before{
+  content: '';
+  position:absolute;
+  width:100%;
+  height: 300px;
+  background: url('assets/bg.png');
+  z-index: -1;
+}
+
+#btn_s svg:hover{
+  fill:white;
+}
+
+#song_item:hover svg{ 
+ opacity: 1;
+}
+
+#pop_song::-webkit-scrollbar{
+  display: none;
+}
+#song_side::-webkit-scrollbar{
+  display: none;
+}
+#search_results::-webkit-scrollbar{
+  display: none;
+}
+
+#bar2{
+  transition: 1s linear;
+  
+}
+#dot{
+  transition: 1s linear;
+}
+
+.card{
+  width: 100%;
+  min-height: 45px;
+  margin-bottom: 6px;
+  border-radius: 5px;
+  background-color: #b8b8b81a;
+  display: none;
+  align-items: center;
+  z-index: 50;
+}
+
+/* JAVASCRIPT CLASSES */
+
+.active1 #wave_1{
+  animation: wave 0.5s linear infinite;
+}
+.active1 #wave_2{
+  animation: wave 0.7s linear infinite;
+}
+.active1 #wave_3{
+  animation: wave 1s linear infinite;
+}
+
+@keyframes wave{
+  0% {
+    height: 13px;
+  }
+  50% {
+    height: 8px;
+    
+  }
+  100% {
+    height: 10px;
+    
+  }
+}
